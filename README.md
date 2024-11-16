@@ -1,26 +1,26 @@
-### **Exercise No-2: Playfair Cipher Program**
+## Exercise No-2: Playfair Cipher Program
 
-#### **Aim:**
+## Aim:
 
 To implement Playfair Cipher encryption and decryption programs in C.
 
-#### **Algorithm:**
+## Algorithm:
 
-1. **Create the Key Matrix**:
+1. ### Create the Key Matrix:
    
    - Take a keyword as input.
    - Remove duplicate letters from the keyword.
    - Fill the key matrix (5x5) with the letters of the keyword.
    - Fill the remaining spaces in the matrix with the rest of the letters of the alphabet (excluding 'J' or merging 'I' and 'J').
 
-3. **Prepare the Plaintext**:
+3. ### Prepare the Plaintext:
    
    - Take a plaintext message as input.
    - Remove spaces and convert all letters to uppercase.
    - Replace 'J' with 'I' if 'J' is not in the key matrix.
    - Insert filler characters like 'X' between repeated letters to break them up.
 
-5. **Encryption**:
+5. ### Encryption:
    
    - For each pair of letters in the plaintext:
      - If the two letters are in the same row, replace them with the letters to their immediate right (wrapping around if necessary).
@@ -28,12 +28,12 @@ To implement Playfair Cipher encryption and decryption programs in C.
      - If the letters form a rectangle, replace them with the letters on the same row but at the opposite corners of the rectangle.
    - Display the encrypted message.
 
-7. **Decryption**:
+7. ### Decryption:
    
    - For each pair of letters in the ciphertext:
      - Reverse the encryption rules to retrieve the original plaintext.
 
-#### **Encryption Code:**
+## Encryption Code:
 
 ```
 #include <stdio.h>
@@ -124,7 +124,7 @@ int main() {
 }
 ```
 
-#### **Decryption Code:**
+## Decryption Code:
 
 ```
 #include <stdio.h>
@@ -203,12 +203,12 @@ int main() {
 }
 ```
 
-#### **Sample Output for Encryption:**
+## Sample Output for Encryption:
 
 ![image](https://github.com/user-attachments/assets/9e4a913a-74a6-4774-9da1-506ad5486312)
 
 
-#### **Sample Output for Decryption:**
+## Sample Output for Decryption:
 
 ![image](https://github.com/user-attachments/assets/6502a6d3-0047-4920-afc2-2dae6f01a510)
 
