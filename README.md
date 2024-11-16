@@ -214,6 +214,6 @@ int main() {
 ![image](https://github.com/user-attachments/assets/6502a6d3-0047-4920-afc2-2dae6f01a510)
 
 
-#### **Result:**
+# Result:
 
 The Playfair Cipher encryption and decryption programs were successfully implemented in C. 
